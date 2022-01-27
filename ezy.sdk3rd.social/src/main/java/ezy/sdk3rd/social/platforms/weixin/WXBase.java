@@ -26,12 +26,12 @@ import ezy.sdk3rd.social.sdk.ResultCode;
  * Created by ezy on 17/3/18.
  */
 
-abstract class WXBase implements IResult, IWXAPIEventHandler {
+public abstract class WXBase implements IResult, IWXAPIEventHandler {
     public static final String TAG = "ezy.sdk3rd.wx";
 
     public static int REQUEST_CODE = 1999;
 
-    static WeakHashMap<IResult, Boolean> services = new WeakHashMap<>();
+    public static WeakHashMap<IResult, Boolean> services = new WeakHashMap<>();
 
     final protected Activity mActivity;
     final protected Platform mPlatform;
