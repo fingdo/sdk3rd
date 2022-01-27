@@ -1,7 +1,5 @@
-plugins {
-    id "com.github.dcendents.android-maven" version "2.0"
-}
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
 
 group=SDK3RD_GROUP
 version=SDK3RD_VERSION
