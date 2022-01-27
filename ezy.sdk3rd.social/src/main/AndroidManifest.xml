@@ -17,12 +17,6 @@
             android:name="${applicationId}.wxapi.WXEntryActivity"
             android:targetActivity=".platforms.weixin.WXCallbackActivity" />
 
-        <activity-alias
-            android:exported="true"
-            android:name="${applicationId}.wxapi.WXPayEntryActivity"
-            android:targetActivity=".platforms.weixin.WXCallbackActivity" />
-
-
     </application>
 
 </manifest>

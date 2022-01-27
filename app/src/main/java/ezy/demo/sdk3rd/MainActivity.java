@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         PlatformConfig.useQQ(BuildConfig.APPID_QQ);
         PlatformConfig.useWeixin(BuildConfig.APPID_WEIXIN);
-        PlatformConfig.useWeibo(BuildConfig.APPID_WEIBO, "http://www.sina.com/");
         PlatformConfig.usePayments();
 
         ShareSDK.setDefaultCallback(new DefaultCallback("share"));

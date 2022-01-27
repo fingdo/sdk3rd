@@ -8,13 +8,9 @@ import ezy.sdk3rd.social.platforms.alipay.Alipay;
 import ezy.sdk3rd.social.platforms.qq.QQAuth;
 import ezy.sdk3rd.social.platforms.qq.TXShare;
 import ezy.sdk3rd.social.platforms.send.SendShare;
-import ezy.sdk3rd.social.platforms.weibo.WBAuth;
-import ezy.sdk3rd.social.platforms.weibo.WBShare;
 import ezy.sdk3rd.social.platforms.weixin.WXAuth;
 import ezy.sdk3rd.social.platforms.weixin.WXPayment;
 import ezy.sdk3rd.social.platforms.weixin.WXShare;
-import ezy.sdk3rd.social.sdk.DefaultFactory;
-import ezy.sdk3rd.social.sdk.Platform;
 import ezy.sdk3rd.social.share.ShareTo;
 
 /**
@@ -22,12 +18,6 @@ import ezy.sdk3rd.social.share.ShareTo;
  */
 
 public class PlatformConfig {
-
-    public static void useWeibo(@NonNull String appId, @NonNull String redirectUrl) {
-        Platform platform = new Platform(AuthorizeVia.Weibo, appId).extra("redirectUrl", redirectUrl);
-        AuthorizeSDK.register(new DefaultFactory(platform, WBAuth.class));
-        ShareSDK.register(new DefaultFactory(platform, WBShare.class));
-    }
 
     public static void useQQ(@NonNull String appId) {
         AuthorizeSDK.register(AuthorizeVia.QQ, appId, QQAuth.class);
